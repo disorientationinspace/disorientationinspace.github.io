@@ -1,169 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-  <title>MAXIM PLAXA</title>
-
+  <title>Pink</title>
+  <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
-  <!-- header -->
-  <header>
-    <!-- logo -->
-    <section class = 'header-logo'>
-      <img src="static/images/logo.png" alt="PLAXA logo">
-    </section>
-    <!-- logo -->
-
-    <!-- social-icons -->
-    <ul class = 'header-social-icons'>
-      <li><a href="https://t.me/plaksa_vaksaa" class = 'social-icon'>
-        <img src="static/images/telegram-logo.png" alt="tg.icon">
-      </a></li>
-      <li><a href="https://www.instagram.com/plaksaaaaaa/" class = 'social-icon'>
-        <img src="static/images/instagram-logo.png" alt="ig.icon">
-      </a></li>
-      <li><a href="https://vk.com/plaksa__vaksa" class = 'social-icon'>
-        <img src="static/images/vk-logo.png" alt="vk.icon">
-      </a></li>
-    </ul>
-    <!-- social-icons -->
+<body class = "page-body">
 
 
-    <!-- nav-bar -->
-    <ul class = 'nav-bar-menu'>
-      <li><a href="" class = 'active'>
-        <span>Home</span>
-      </a></li>
-      <li><a href="">
-        <span>News</span>
-      </a></li>
-      <li><a href="">
-        <span>About</span>
-      </a></li>
-    </ul>
-    <!-- nav-bar -->
+  <!-- Хедер -->
+  <header class="page-header">
 
+    <!-- Навигация -->
+    <nav class="page-header__navigation site-navigation site-navigation--no-js">
+
+
+      <div class="site-navigation__wrapper">
+      <!-- Верхний контейнер -->
+        <div class="site-navigation__header">
+
+          <!-- Логотип -->
+          <p class="site-navigation__logo">
+            <a href="index.html" class="site-navigation__logo-link"></a>
+          </p>
+
+          <!-- Кнопка открытия меню -->
+          <button class="site-navigation__button button-open">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+          <button class="site-navigation__button button-close">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+        </div>
+
+
+      <ul class="site-navigation__list">
+        <li class="site-navigation__item item--current">
+          <a class="site-navigation__link">Главная</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="photo.html" class="site-navigation__link">Фотографии</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="form.html" class="site-navigation__link">Конкурс</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="https://github.com/disorientationinspace" class="site-navigation__link">Wito Divaro</a>
+        </li>
+      </ul>
+    </div>
+
+    </nav>
   </header>
-  <!-- header -->
 
-<!-- main content -->
-  <main>
-    <section class = 'first-section'>
-      <section class = 'section-name wow fadeIn' data-wow-duration = '2s'
-      tabindex="0">
-        <h1><span>максим</span>
-          <span>плакса</span></h1>
-      </section>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Главная сайта "PINK"</h1>
+
+    <!-- Вступительная часть -->
+    <section class="intro">
+      <h2 class="visually-hidden">Вступительная часть сайта</h2>
+      <div class="intro__wrapper">
+        <div class="intro__container">
+          <p class="intro__title">Взгляните на жизнь иначе!</p>
+          <a href="" class="intro__download-link rounded-link">Скачать приложение</a>
+          <ul class="intro__download-list">
+              <li class="intro__download-item">
+              <a href="" class="intro__download-link-icon download-link-icon--apple"><span class="visually-hidden">Скачать для Apple</span></a>
+            </li>
+            <li class="intro__download-item">
+              <a href="" class="intro__download-link-icon download-link-icon--android"><span class="visually-hidden">Скачать для Android</span></a>
+            </li>
+            <li class="intro__download-item">
+              <a href="" class="intro__download-link-icon download-link-icon--windows"><span class="visually-hidden">Скачать для Windows Phone</span></a>
+            </li>
+          </ul>
+          <small class="intro__description-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+        </div>
+      </div>
     </section>
+    <!-- Вступительная часть-->
 
 
-    <!-- selling -->
+    <!-- Информация -->
+    <section class="page-main__information information">
+      <h2 class="visually-hidden">Информация о приложении</h2>
+      <p class="information__slogan slogan--top">Устали от серости мегаполиса?</p>
+      <p class="information__slogan slogan--bottom">Нам есть, <br> что вам предложить!</p>
 
-    <section class = 'second-section'>
-
-    <!-- introduction -->
-
-      <section class="block1" tabindex="0">
-        <div class="image wow fadeInLeft" data-wow-duration = '2s'>
-          <img src="static/images/pic1.JPG" alt="MAXIM PLAXA #1">
+      <div class="information__wrapper">
+        <div class = "information__features-container">
+          <div class="information__feature-item">
+            <b class="information__feature-title">Поднимает настроение</b>
+            <p class="information__feature-detailed">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="information__feature-item">
+            <b class="information__feature-title">Меняет мир вокруг</b>
+            <p class="information__feature-detailed">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="information__feature-item">
+            <b class="information__feature-title">Заводит новых друзей</b>
+            <p class="information__feature-detailed">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
         </div>
-        <div class='description text wow fadeInRight' data-wow-duration = '2s'>
-          <p>Потрясающий исполнитель.<br><br>гитарист, вокалист, программист</p>
+
+        <div class="information__photo-wrapper">
+
+          <p class="information__photo-container">
+            <picture>
+              <source type = "image/webp" media = "(min-width: 960px)"
+                    srcset = "images/desktop-iphone-background1@1x.webp 1x,
+                              images/desktop-iphone-background1@2x.webp 2x">
+
+              <source type = "image/webp" media = "(min-width: 660px)"
+                    srcset = "images/tablet-iphone-background@1x.webp 1x,
+                              images/tablet-iphone-background@2x.webp 2x">
+
+              <source media = "(min-width: 960px)"
+                    srcset = "images/desktop-iphone-background1@1x.png 1x,
+                              images/desktop-iphone-background1@2x.png 2x">
+
+              <source media = "(min-width: 660px)"
+                    srcset = "images/tablet-iphone-background@1x.png 1x,
+                              images/tablet-iphone-background@2x.png 2x">
+              <source type="image/webp" srcset ="images/iphone-screen-1@1x.webp 1x,
+                           images/iphone-screen-1@2x.webp 2x">
+
+              <img class = "information__photo-image"
+                    width = 160 height = 320
+                    src ="images/iphone-screen-1@1x.png"
+                    srcset = "images/iphone-screen-1@2x.png 2x"
+                    alt="Обработанное розовым фото со смайликом и надписью 'Всем привет!'">
+            </picture>
+          </p>
+
+          <p class="information__photo-container">
+            <picture>
+              <source media = "(min-width: 960px)"
+                    srcset = "images/desktop-iphone-background2@1x.png 1x,
+                              images/desktop-iphone-background2@2x.png 2x">
+
+              <img class = "information__photo-image"
+                    width = 160 height = 320
+                    src =""
+                    alt="">
+            </picture>
+          </p>
+
+          <p class="information__photo-container">
+            <picture>
+              <source type = "image/webp" media = "(min-width: 960px)"
+                    srcset = "images/desktop-iphone-background3@1x.webp 1x,
+                              images/desktop-iphone-background3@2x.webp 2x">
+
+              <source type = "image/png" media = "(min-width: 960px)"
+                    srcset = "images/desktop-iphone-background3@1x.png 1x,
+                              images/desktop-iphone-background3@2x.png 2x">
+
+              <img class = "information__photo-image"
+                    width = 160 height = 320
+                    src =""
+                    alt="">
+            </picture>
+          </p>
         </div>
-      </section>
-
-    <!-- introduction -->
-
-
-    <!-- crowd-jumping (bg) -->
-
-      <section class="block2 wow fadeIn" data-wow-duration = '2s'
-      tabindex = '0'>
-        <article class="image"></article>
-      </section>
-
-    <!-- crowd-jumping (bg) -->
-
-
-      <!-- insruments -->
-
-      <div class="block3" tabindex="0">
-        <div class="description text wow fadeInLeft" data-wow-duration = '2s'>
-          <p>Только качественное оборудование</p>
-        </div>
-        <div class="image wow fadeInRight" data-wow-duration = '2s'>
-          <img src="static/images/pic3.jpg" alt="maxim plaxa #2">
+        <div class="information__feature-item feature-item--large">
+          <b class = "information__feature-title feature-title--large">Эффект <br> на 24 часа!</b>
+          <p class="information__feature-detailed">Британские ученые провели ииследование и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="" class="information__link">Узнать больше об исследовании</a>
         </div>
       </div>
 
-      <!-- instruments -->
-
-
-      <!-- genius -->
-      <div class="block4 " tabindex="0">
-        <div class = 'image wow fadeInLeft' data-wow-duration = '2s'>
-          <img src="static/images/IMG_2772.JPG" alt="Maxim Plaxa #3">
-        </div>
-        <div class="description text wow fadeInRight" data-wow-duration = '2s'>
-          <p>Гений Гитары.
-          <br><br>Релиз первого горячего трека в течение года!</p>
-        </div>
-      </div>
-      <!-- genius -->
-
-      <section class="block5" tabindex="0">
-        <div class="slogan description text wow fadeIn" data-wow-duration = '2s'>
-          Следите за Максом в телеграме!</div>
-        <div class="image wow bounceIn" data-wow-delay = '1s'><a href="https://t.me/plaksa_vaksaa">
-          <img src="static/images/telega.png" alt="telegram join"
-          aria-label = 'Ссылка в телеграм-канал'>
-          </a>
-        </div>
-      </section>
-
     </section>
-    <!-- selling -->
+    <!-- Информация -->
+
+    <!-- Отзывы -->
+    <section class="page-main__reviews reviews slider">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <button class="reviews__button reviews__button-previous">
+        <span class="visually-hidden">Предыдущий отзыв</span>
+      </button>
+      <div class="reviews__review slider__element slider__element--active">
+        <b class="reviews__author">Николай Петров</b>
+        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <small class="reviews__author-description">25 лет, водитель трамвая</small>
+      </div>
+      <div class="reviews__review slider__element">
+        <b class="reviews__author">Wito Divaro</b>
+        <p class="reviews__text">«Прекрасное приложение и не менее прекрасный сайт, удивительно исполненный малоизвестным фронтенд-разработчиком Wito Divaro.»</p>
+        <small class="reviews__author-description">16 лет, безработный</small>
+      </div>
+      <div class="reviews__review slider__element">
+        <b class="reviews__author">HR-менеджер</b>
+        <p class="reviews__text">«В целом вёрстка неплохая, на полставки пойдёт. Главное, чтобы не требовал много и работу выполнял, а иначе - уволим!!!»</p>
+        <small class="reviews__author-description">120 лет (психологически), HR менеджер</small>
+      </div>
+      <button class="reviews__button reviews__button-next">
+        <span class="visually-hidden">Следующий отзыв</span>
+      </button>
+      <div class="slider__radio">
+        <label class="slider__label"><input type="radio" class="slider__input-radio visually-hidden" name="review" value="1" checked><span class="slider__radio-indicator"></span></label>
+        <label class="slider__label"><input type="radio" class="slider__input-radio visually-hidden" name="review" value="2"><span class="slider__radio-indicator"></span></label>
+        <label class="slider__label"><input type="radio" class="slider__input-radio visually-hidden" name="review" value="3"><span class="slider__radio-indicator"></span></label>
+      </div>
+    </section>
+    <!-- Отзывы -->
+
+
+    <!-- Тарифы -->
+    <section class="page-main__price price slider price--center">
+      <h2 class="visually-hidden">Цены</h2>
+
+      <table class = "price__table">
+        <tr class = "price__row price__row--large">
+          <td class = "price__data price__data--empty  price__data--first"></td>
+          <td class = "price__data price__data--type">
+            <b class="price__title">База</b>
+            <p class="price__value">1,99 USD</p>
+          </td>
+          <td class = "price__data price__data--type price__data--hit">
+            <b class="price__title title--hit">Стандарт</b>
+            <p class="price__value">3,99 USD</p>
+          </td>
+          <td class = "price__data price__data--type">
+            <b class="price__title">Анлим</b>
+            <p class="price__value">9,99 USD</p>
+          </td>
+        </tr>
+        <tr class = "price__row">
+          <td class = "price__data price__data--first"><span class="price__setting">Розовый фильтр</span></td>
+          <td class = "price__data"><span class="price__available">Доступен</span></td>
+          <td class = "price__data"><span class="price__available">Доступен</span></td>
+          <td class = "price__data"><span class="price__available">Доступен</span></td>
+        </tr>
+        <tr class = "price__row">
+          <td class = "price__data price__data--first"><span class="price__setting">Смайлики</span></td>
+          <td class = "price__data"><span class="price__unavailable">Не доступен</span></td>
+          <td class = "price__data"><span class="price__available">Доступен</span></td>
+          <td class = "price__data"><span class="price__available">Доступен</span></td>
+        </tr>
+        <tr class = "price__row">
+          <td class = "price__data price__data--first"><span class="price__setting">Комментарии</span></td>
+          <td class = "price__data"><span class="price__unavailable">Не доступен</span></td>
+          <td class = "price__data"><span class="price__unavailable">Не доступен</span></td>
+          <td class = "price__data"><span class="price__available">Доступен</span></td>
+        </tr>
+    </table>
+      <div class="slider__radio">
+        <label class="slider__label"><input type="radio" class="slider__input-radio visually-hidden" name="price" value="1"><span class="slider__radio-indicator"></span></label>
+        <label class="slider__label"><input type="radio" class="slider__input-radio visually-hidden" name="price" value="2" checked><span class="slider__radio-indicator"></span></label>
+        <label class="slider__label"><input type="radio" class="slider__input-radio visually-hidden" name="price" value="3"><span class="slider__radio-indicator"></span></label>
+      </div>
+    </section>
+    <!-- Тарифы -->
+
+
+    <!-- Контакты -->
+    <section class="page-main__contacts contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+
+      <p class="contacts__slogan">Остались вопросы? <br> Свяжитесь с нами!</p>
+
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <b class="contacts__type">Звоните:</b>
+          <span class="contacts__data">+7 (812) 555-66-66</span>
+        </li>
+
+        <li class="contacts__item">
+          <b class="contacts__type">Пишите:</b>
+          <a href = "" class="contacts__data contacts__email">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <b class="contacts__type">Приезжайте в гости:</b>
+          <span class="contacts__data">ул. Большая конюшенная, 19/8</span>
+        </li>
+      </ul>
+    </section>
+    <!-- Контакты -->
+
+
+    <!-- Карта -->
+    <section class="page-main__map map">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4257.187190569469!2d28.502164200400248!3d49.228771521026886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x797584f331f954ee!2z0JTQsNGH0LA!5e0!3m2!1sru!2sby!4v1593592867473!5m2!1sru!2sby" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <!-- Карта -->
   </main>
 
 
-    <!-- footer -->
-  <footer>
-    <!-- logo -->
-    <div class="footer-logo">
-      <img src="static/images/logo.png" aria-label = 'Логотип "ПЛАКСА"' alt="">
+  <footer class = "page-footer page-footer--no-mobile">
+    <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo">
+          <span class="visually-hidden">Логотип сайта "Пинк"</span>
+        </a>
+      <ul class="social-contacts page-footer__social-contacts">
+        <li class="social-contacts__item"><a href="" class="social-contacts__link social-contacts__link--twitter"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social-contacts__item"><a href="" class="social-contacts__link social-contacts__link--facebook"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-contacts__item"><a href="" class="social-contacts__link social-contacts__link--youtube"><span class="visually-hidden">Youtube</span></a></li>
+      </ul>
+
+      <!-- Копирайт -->
+      <div class="copyright page-footer__copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru"><span class="visually-hidden">HTMLAcademy</span></a>
+      </div>
     </div>
-    <!-- logo -->
-
-    <!-- social icons -->
-    <ul class = 'footer-social-icons'>
-      <li><a href="https://t.me/plaksa_vaksaa" class = 'social-icon' aria-label = 'Ссылка в телеграм-канал'>
-        <img src="static/images/telegram-logo.png" alt="tg.icon">
-      </a></li>
-      <li><a href="https://www.instagram.com/plaksaaaaaa/" aria-label = 'Ссылка в инстаграмм' class = 'social-icon'>
-        <img src="static/images/instagram-logo.png" alt="ig.icon">
-      </a></li>
-      <li><a href="https://vk.com/plaksa__vaksa" class = 'social-icon'
-        aria-label = 'Ссылка на аккаунт ВКонтакте'>
-        <img src="static/images/vk-logo.png" alt="vk.icon">
-      </a></li>
-    </ul>
-    <!-- social icons -->
-
-    <!-- copyright -->
-      <section class = 'copyright' aria-label = 'Разработчик сайта'>
-        <p>Made by: Wito Divaro</p>
-      </section>
-    <!-- copyright -->
   </footer>
-    <!-- footer -->
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+
+
+  <script src = "js/menu.js"></script>
+  <script src = "js/reviews-slider.js"></script>
+  <script src = "js/price-slider.js"></script>
 
 </body>
 </html>
