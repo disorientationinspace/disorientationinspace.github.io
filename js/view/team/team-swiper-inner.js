@@ -14,7 +14,8 @@ export default class TeamSwiper extends Abstract {
 
         this._onSwiperTouchStart = null;
         this._onSwiperTouchMove = null;
-        this._onSwiperTouchEnd = null;
+        this._onSwiperMouseDown = null;
+        this._onSwiperMouseMove = null;
     }
 
     getTemplate() {
@@ -25,6 +26,7 @@ export default class TeamSwiper extends Abstract {
         this._onSwiperTouchStart = handler;
 
         this.getElement().addEventListener('touchstart', handler);
+
     }
 
     removeOnSwiperTouchMove() {
@@ -32,11 +34,29 @@ export default class TeamSwiper extends Abstract {
         
         this._onSwiperTouchMove = null;
     }
-    
-    removeOnSwiperTouchEnd() {
-        this.getElement().removeEventListener('touchend', this._onSwiperTouchEnd);
+
+    removeOnSwiperTouchStart() {
+        this.getElement().removeEventListener('mousedown', this._onSwiperMouseDown);
         
-        this._onSwiperTouchEnd = null;    
+        this._onSwiperMouseDown = null;    
+    }
+
+    removeOnSwiperMouseMove() {
+        this.getElement().removeEventListener('mousemove', this._onSwiperMouseMove);
+        
+        this._onSwiperMouseMove = null;
+    }
+    
+    removeOnSwiperMouseUp() {
+        this.getElement().removeEventListener('mouseup', this._onSwiperMouseUp);
+        
+        this._onSwiperMouseUp = null;    
+    }
+    
+    removeOnSwiperMouseDown() {
+        this.getElement().removeEventListener('mousedown', this._onSwiperMouseDown);
+        
+        this._onSwiperMouseDown = null;    
     }
 
     setOnSwiperTouchMove(handler) {
@@ -45,10 +65,22 @@ export default class TeamSwiper extends Abstract {
         this.getElement().addEventListener(`touchmove`, handler);
     }
 
-    setOnSwiperTouchEnd(handler) {
-        this._onSwiperTouchEnd = handler;
+    setOnSwiperMouseDown(handler) {
+        this._onSwiperMouseDown = handler;
 
-        this.getElement().addEventListener(`touchend`, handler);
+        this.getElement().addEventListener(`mousedown`, handler);
+    }
+
+    setOnSwiperMouseMove(handler) {
+        this._onSwiperMouseMove = handler;
+
+        this.getElement().addEventListener(`mousemove`, handler);
+    }
+
+    setOnSwiperMouseUp(handler) {
+        this._onSwiperMouseUp = handler;
+
+        this.getElement().addEventListener(`mouseup`, handler);
     }
 
     translateByX(translate) {
